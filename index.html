@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <title>半分糖甘豆的个人主页</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <style rel="stylesheet" type="text/css">
+        #main-nav{
+            background-color:deepskyblue;
+        }
+        #main-nav div{
+            position:absolute;
+            top:15%;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function showpage(pagenumber){
+        var page1=document.getElementById('page1');
+        var page2=document.getElementById('page2');
+        var page3=document.getElementById('page3');
+        var btn1=document.getElementById('menubtn1');
+        var btn2=document.getElementById('menubtn2');
+        var btn3=document.getElementById('menubtn3');
+        page1.className='tag';
+        page2.className='tag';
+        page3.className='tag';
+        btn1.className='menubtn';
+        btn2.className='menubtn';
+        btn3.className='menubtn';
+        switch (pagenumber)
+        {
+            case(1):
+            {
+                page1.className='tag-active';
+                btn1.className='menubtn-active';
+                break;
+            }
+            case(2):
+            {
+                page2.className='tag-active';
+                btn2.className='menubtn-active';
+                break;
+            }
+            case(3):
+            {
+                page3.className='tag-active';
+                btn3.className='menubtn-active';
+                break;
+            }
+        }
+    }
+</script>
+<div class="mainbox">
+    <div id="main-nav" class="navbox">
+        <div align="center">
+            <img src="img/icon.png" width="50%" alt="头像">
+            <h1 class="label-white">candybeans</h1>
+            <table width="100%">
+                <tr width="100%">
+                    <td width="50%" align="center"><img width="100%" src="img/wechat.png">微信二维码</td>
+                    <td width="50%">
+                        <table width="100%">
+                            <tr><td align="center"><span id="menubtn1" class="menubtn" onclick="showpage(1)">
+                                个人简介</span></td></tr>
+                            <tr><td align="center"><span id="menubtn2" class="menubtn" onclick="showpage(2)">
+                                课程作业</span></td></tr>
+                            <tr><td align="center"><span id="menubtn3" class="menubtn-active" onclick="showpage(3)">
+                                日志</span></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="contentbox">
+        <div id="page1" class="tag">
+            <div class="container">
+                个人简介
+
+            </div>
+        </div>
+        <div id="page2" class="tag">
+            <div class="container">
+            课程作业
+            </div>
+        </div>
+        <div id="page3" class="tag-active">
+            <div class="container">
+                日志
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
