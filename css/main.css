@@ -68,3 +68,28 @@ div{
     padding-left:20px;
     padding-right:20px;
 }
+.page-header{
+    padding-top:50px;
+    padding-left:30px;
+}
+.linkbox{
+    border:3px outset deepskyblue;
+    padding-top:0;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:0;
+}
+.linkbox h3{
+    font-family:幼圆;
+    border-bottom:1px solid lightgrey;
+    padding-bottom:5px;
+}
+.linkbox h5{
+    font-family:楷体;
+    color:gray;
+}
+.linkbox .time{
+    text-align:right;
+    color:deepskyblue;
+    font-size:10px;
+}

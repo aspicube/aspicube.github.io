@@ -63,11 +63,11 @@
                     <td width="50%" align="center"><img width="100%" src="img/wechat.png">微信二维码</td>
                     <td width="50%">
                         <table width="100%">
-                            <tr><td align="center"><span id="menubtn1" class="menubtn" onclick="showpage(1)">
+                            <tr><td align="center"><span id="menubtn1" class="menubtn-active" onclick="showpage(1)">
                                 个人简介</span></td></tr>
                             <tr><td align="center"><span id="menubtn2" class="menubtn" onclick="showpage(2)">
                                 课程作业</span></td></tr>
-                            <tr><td align="center"><span id="menubtn3" class="menubtn-active" onclick="showpage(3)">
+                            <tr><td align="center"><span id="menubtn3" class="menubtn" onclick="showpage(3)">
                                 日志</span></td></tr>
                         </table>
                     </td>
@@ -76,20 +76,42 @@
         </div>
     </div>
     <div class="contentbox">
-        <div id="page1" class="tag">
+        <div id="page1" class="tag-active">
             <div class="container">
-                个人简介
-
+                <div class="page-header">
+                    <h1>个人简介</h1>
+                    <p>
+                        姓名：殷彦昭
+                        <br>
+                        性别：男
+                        <br>
+                        院系：微纳电子系
+                    </p>
+                    <p>
+                        为人低调，喜欢玩游戏和编程。对运动不是很感兴趣，仅作为日常锻炼身体的方式。做事喜欢从一而终，讨厌在毫无经验的情况下做事。
+                        在学生科协的社工中有所作为。现任清华大学学生科协副主席，主持学生科协信息化平台的建设。
+                    </p>
+                </div>
             </div>
         </div>
         <div id="page2" class="tag">
             <div class="container">
-            课程作业
+                <div class="page-header">
+                    <h1>课程作业</h1>
+                    <p>第二次练习</p>
+                    <p>第三次练习</p>
+                    <p>第四次练习</p>
+                    <p>大作业</p>
+                </div>
             </div>
         </div>
-        <div id="page3" class="tag-active">
+        <div id="page3" class="tag">
             <div class="container">
-                日志
+                <div class="linkbox">
+                    <h3><a href="log1.html" target="_blank">编程是一种艺术</a></h3>
+                    <h5>虽然并不能成为一个程序员，但我依然希望能够体会编程之美。</h5>
+                    <p class="time">2016.7.1</p>
+                </div>
             </div>
         </div>
     </div>
